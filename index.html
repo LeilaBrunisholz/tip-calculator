@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Tip Calculator App</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+        </header>
+        <main>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <!--input for bill amount-->
+                        <label for="totalBill" class="form-label">total bill:</label>
+                        <input type="text"class="form-control" id="totalBill" placeholder="enter total bill"/>
+                    </div>
+                    <div class="col-md-6">
+                        <!--number of people-->
+                        <label for="numOfPeople" class="form-label">number of people:</label>
+                        <input type="text"class="form-control" id="numOfPeople" placeholder="enter number of people"/>
+                    </div>
+                </div>
+               <div class="row mt-3">
+                <div class="col-md-6">
+                    <!--dropdown for service quality-->
+                    <label for="serviceQuality" class="form-label">service quality:</label>
+                    <select class="form-select" id="serviceQuality">
+                        <option value="great">Great</option>
+                        <option value="good">Good</option>
+                        <option value="poor">Poor</option>
+                    </select>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <!--button to trigger calculation-->
+                    <button class="btn btn-primary" onclick="calculateAndDisplay()">Calculate</button>
+                </div>
+               </div>
+               <div class="row mt-4">
+                <div class="col-md-12">
+                    <!--results section-->
+                    <h4>results</h4>
+                    <p id="tipResult"></p>
+                    <p id="totalBillResult"></p>
+                    <p id="amPerPersonResult"></p>
+                </div>
+               </div>
+            </div>
+        </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
